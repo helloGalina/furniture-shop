@@ -1,0 +1,160 @@
+:root {
+  --yellow: #ffde59;
+  --yellow-dark: #f6c700;
+  --blue: #6ec1e4;
+  --blue-dark: #47a8cf;
+  --red: #ff6b6b;
+  --green: #a1e44d;
+  --green-light: #b7f06a;
+  --bg-light: #f5f7fa;
+  --text-dark: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-dark);
+  background: var(--bg-light) url("/src/assets/leaves.png") repeat;
+  background-size: 180px;
+  background-attachment: fixed;
+  line-height: 1.6;
+}
+
+section {
+  padding: 3rem 1rem;
+}
+
+
+header {
+  background-color: var(--yellow);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.site-header a {
+  color: var(--text-dark);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.site-header a:hover {
+  color: var(--red);
+}
+
+
+.carousel {
+  margin: 2rem auto;
+  width: 65%;
+}
+
+.carousel img {
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+#catalog {
+  background-color: #fff;
+}
+
+.card {
+  border-radius: 1rem !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-warning {
+  background-color: var(--yellow);
+  border: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 3px 0 var(--yellow-dark);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-warning:hover {
+  background-color: #ffe681;
+  transform: translateY(-2px);
+}
+
+
+#about {
+  background-color: var(--blue);
+  color: var(--text-dark);
+  text-align: center;
+}
+
+#about h2 {
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+
+footer {
+  background-color: var(--lego-green);
+  color: #000;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 4px solid var(--lego-green-light);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+footer li {
+  margin: 0.3rem 0;
+}
+
+footer small {
+  display: block;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 90%;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .site-header nav a {
+    margin: 0 0.5rem;
+  }
+}

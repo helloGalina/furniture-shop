@@ -1,10 +1,12 @@
-import pic01 from "../assets/pic01.png";
-import pic02 from "../assets/pic02.png";
-import pic03 from "../assets/pic03.png";
+import pic01 from "../assets/pic01.jpeg";
+import pic02 from "../assets/pic02.jpeg";
+import pic03 from "../assets/pic03.jpeg";
+import pic04 from "../assets/pic04.jpeg";
 
 export default function Carousel() {
   return (
     <div id="carouselExample" className="carousel slide w-50 my-4 mx-auto">
+      <h2 className="text-center mt-4 mb-3">Готовые решения для вдохновения</h2>
       <div className="carousel-inner rounded-4 shadow-sm">
         <div className="carousel-item active">
           <img src={pic01} className="d-block w-100" alt="Детская кровать" />
@@ -32,7 +34,7 @@ export default function Carousel() {
         data-bs-slide="next"
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Вперёд</span>
+        <span className="visually-hidden">Вперед</span>
       </button>
     </div>
   );

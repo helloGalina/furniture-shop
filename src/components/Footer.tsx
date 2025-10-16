@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer
       id="contacts"
-      className="site-footer bg-warning text-dark py-4 mt-5 user-select-none"
+      className="bg-light-green text-dark pt-4 mt-5 border-top"
     >
       <div className="container text-center">
         <h3 className="fw-bold mb-3">Контакты</h3>
@@ -22,7 +22,7 @@ export default function Footer() {
           ></iframe>
         </div>
         <small className="text-muted">
-          © 2025 KIDS ROOM — уют и игра в каждом уголке
+          © 2025 "Маленький мир" — уют и игра в каждом уголке
         </small>
       </div>
     </footer>

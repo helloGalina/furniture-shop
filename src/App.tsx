@@ -1,21 +1,29 @@
 import Header from "./components/Header.tsx";
-import Footer from "./components/Footer.tsx";
+import Banner from "./components/Banner.tsx";
 import Carousel from "./components/Carousel.tsx";
-import ProductList from "./components/ProductList.tsx";
 import About from "./components/About.tsx";
+import ProductList from "./components/ProductList.tsx";
+import Footer from "./components/Footer.tsx";
+import ScrollTopButton from "./components/ScrollTopButton";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
+
+
 
 export default function App() {
   return (
     <div className="semantic">
       <Header />
       <main className="d-flex flex-column align-items-center">
+        <Banner />
         <Carousel />
+        <About />
         <section id="catalog" className="w-100">
           <ProductList />
-          <About />
         </section>
       </main>
       <Footer />
+      <ScrollTopButton />
     </div>
   );
 }

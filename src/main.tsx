@@ -5,7 +5,6 @@ import App from './App.tsx'
 
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js'
 import 'bootstrap/dist/js/bootstrap.bundle.js'
 
 createRoot(document.getElementById('root')!).render(

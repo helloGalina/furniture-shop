@@ -2,6 +2,7 @@ import pic01 from "../assets/pic01.jpeg";
 import pic02 from "../assets/pic02.jpeg";
 import pic03 from "../assets/pic03.jpeg";
 import pic04 from "../assets/pic04.jpeg";
+import pic001 from "../assets/pic001.jpg";
 
 export default function Carousel() {
   return (
@@ -9,6 +10,9 @@ export default function Carousel() {
       <h2 className="text-center mt-4 mb-3">Готовые решения для вдохновения</h2>
       <div className="carousel-inner rounded-4 shadow-sm">
         <div className="carousel-item active">
+          <div className="carousel-item">
+            <img src={pic001} className="d-block w-100" alt="Игровой уголок" />
+          </div>
           <img src={pic01} className="d-block w-100" alt="Детская кровать" />
         </div>
         <div className="carousel-item">
@@ -16,6 +20,9 @@ export default function Carousel() {
         </div>
         <div className="carousel-item">
           <img src={pic03} className="d-block w-100" alt="Игровой уголок" />
+        </div>
+        <div className="carousel-item">
+          <img src={pic04} className="d-block w-100" alt="Игровой уголок" />
         </div>
       </div>
       <button

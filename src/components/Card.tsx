@@ -1,5 +1,5 @@
 import ErrorFace from "./ErrorFace";
-import ProductList from "./ProductList";
+// import ProductList from "./ProductList";
 
 interface CardComponentProps {
   title: string;
@@ -8,7 +8,7 @@ interface CardComponentProps {
   key: number;
 }
 
-function Card({ title, picture, price }: CardComponentProps) {
+function Card({ title, price }: CardComponentProps) {
   return (
     <div className="card" style={{ width: "400px" }}>
       <div className="card-img-top p-3">

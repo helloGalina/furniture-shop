@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function ScrollTopButton() {
   const [visible, setVisible] = useState(false);
-
   useEffect(() => {
     const toggleVisibility = () => {
       setVisible(window.scrollY > 200);
@@ -22,5 +22,4 @@ function ScrollTopButton() {
     </button>
   );
 }
-
 export default ScrollTopButton;

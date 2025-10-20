@@ -6,13 +6,12 @@ import pic001 from "../assets/pic001.jpg";
 
 export default function Carousel() {
   return (
-    <div id="carouselExample" className="carousel slide w-50 my-4 mx-auto">
-      <h2 className="text-center mt-4 mb-3">Готовые решения для вдохновения</h2>
+    <div id="carouselExample" className="carousel slide w-75 my-4 mx-auto">
       <div className="carousel-inner rounded-4 shadow-sm">
         <div className="carousel-item active">
-          <div className="carousel-item">
-            <img src={pic001} className="d-block w-100" alt="Игровой уголок" />
-          </div>
+          <img src={pic001} className="d-block w-100" alt="Игровой уголок" />
+        </div>
+        <div className="carousel-item">
           <img src={pic01} className="d-block w-100" alt="Детская кровать" />
         </div>
         <div className="carousel-item">

@@ -8,16 +8,14 @@ import ScrollTopButton from "./components/ScrollTopButton";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
-
-
 export default function App() {
   return (
-    <div className="semantic">
+    <div>
       <Header />
       <main className="d-flex flex-column align-items-center">
         <Banner />
-        <Carousel />
         <About />
+        <Carousel />
         <section id="catalog" className="w-100">
           <ProductList />
         </section>

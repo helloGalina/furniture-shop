@@ -2,6 +2,7 @@
   "name": "furniture-shop",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://hellogalina.github.io/furniture-shop",
   "type": "module",
   "scripts": {
     "dev": "vite",

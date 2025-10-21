@@ -33,7 +33,7 @@
 ## Демо
 
 Вы можете посмотреть живую версию проекта здесь:  
-[Демо "Маленький мир"](https://hellogalina.github.io/furniture-shop/)
+[Демо "Маленький мир"](https://furniture-shop-git-main-galas-projects-e1c5c6c5.vercel.app)
 
 ## Установка и запуск
 
